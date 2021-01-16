@@ -1,4 +1,8 @@
 version: 2.1
+parameters:
+  image-tag:
+    type: string
+    default: "latest"
 jobs:
   build:
     working_directory: ~/customer-microservice-main
