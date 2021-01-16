@@ -5,9 +5,10 @@ parameters:
     default: "latest"
 jobs:
   build:
-    working_directory: ~/customer-microservice-main
+    working_directory: ~/test-dir
     docker:
       - image: google/cloud-sdk
-    IMAGETAG: pipeline.parameters.image-tag 
+    environment:
+      IMAGETAG: << pipeline.parameters.image-tag >>
     steps:
       - checkout
