@@ -6,3 +6,7 @@ jobs:
       - image: google/cloud-sdk
     steps:
       - checkout
+      - run: 
+          name: printing parameter getting passed
+          command: |
+            echo ${name}
