@@ -13,6 +13,6 @@ jobs:
     steps:
       - checkout
       - run: 
-        name: test parameter
-        command: |
-          echo {$IMAGETAG}
+          name: test parameter
+          command: |
+            echo {$IMAGETAG}
