@@ -12,3 +12,6 @@ jobs:
       IMAGETAG: << pipeline.parameters.image-tag >>
     steps:
       - checkout
+      - run: 
+        name: test parameter
+        echo {$IMAGETAG}
