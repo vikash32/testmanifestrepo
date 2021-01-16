@@ -4,9 +4,6 @@ jobs:
     working_directory: ~/customer-microservice-main
     docker:
       - image: google/cloud-sdk
+    IMAGETAG: << pipeline.parameters.image-tag >>
     steps:
       - checkout
-      - run: 
-          name: printing parameter getting passed
-          command: |
-            echo $name
