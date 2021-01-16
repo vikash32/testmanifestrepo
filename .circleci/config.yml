@@ -9,10 +9,10 @@ jobs:
     docker:
       - image: google/cloud-sdk
     environment:
-      IMAGETAG: << pipeline.parameters.image-tag >>
+      IMAGETAG: << parameters.image-tag >>
     steps:
       - checkout
       - run: 
           name: test parameter
           command: |
-            echo ${IMAGETAG}
+            echo $IMAGETAG
