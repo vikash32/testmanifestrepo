@@ -9,4 +9,4 @@ jobs:
       - run: 
           name: printing parameter getting passed
           command: |
-            echo ${name}
+            echo $name
