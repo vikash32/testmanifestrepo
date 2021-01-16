@@ -1,0 +1,8 @@
+version: 2.1
+jobs:
+  build:
+    working_directory: ~/customer-microservice-main
+    docker:
+      - image: google/cloud-sdk
+    steps:
+      - checkout
